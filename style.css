@@ -1,0 +1,29 @@
+
+body {
+    background-color: #e9ecef;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    border-bottom: 3px solid #0056b3; 
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+}
+
+.dashboard-card {
+    border-left: 5px solid #007bff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,.05);
+}
+
+.progress-bar-full {
+    background-color: #dc3545 !important; 
+}
+
+.progress-bar-open {
+    background-color: #28a745 !important; 
+}
+
+
+.table-responsive {
+    margin-top: 20px;
+}
