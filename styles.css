@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set default font and background for entire page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* HEADER SECTION */
+header {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    /* Animation for header */
+    animation: fadeIn 2s ease-in;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+
+/* NAVIGATION BAR */
+nav {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    text-align: center;
+    /* Make nav sticky at the top */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    margin: 0 5px;
+    display: inline-block;
+    border-radius: 5px;
+    /* Smooth transition for hover effects */
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff6b35;
+}
+
+
+/* MAIN CONTENT AREA */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* TOURIST ATTRACTION SECTIONS */
+.attraction {
+    background-color: white;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 10px;
+    /* Add shadow for depth */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Animation when section appears */
+    animation: slideIn 1s ease-out;
+}
+
+.attraction h2 {
+    color: #2c3e50;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ff6b35;
+    padding-bottom: 10px;
+}
+
+/* Container for content layout */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* IMAGE STYLES */
+.attraction img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    /* Animation on hover */
+    transition: transform 0.3s ease;
+}
+
+/* Zoom effect when hovering over images */
+.attraction img:hover {
+    transform: scale(1.05);
+}
+
+/* MEDIA SECTION (AUDIO & VIDEO) */
+.media-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.media-section audio,
+.media-section video {
+    width: 100%;
+    border-radius: 8px;
+    /* Subtle shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* DESCRIPTION TEXT */
+.description {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #ff6b35;
+    border-radius: 5px;
+}
+
+
+/* MAP AND VIDEO SECTIONS */
+.map-section,
+.video-section {
+    background-color: white;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-section h2,
+.video-section h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.map-section iframe,
+.video-section iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* FOOTER */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #ff6b35;
+    text-decoration: none;
+    /* Hover effect for links */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f7931e;
+}
+
+/* ANIMATIONS */
+/* Fade in animation for header */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide in animation for sections */
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
