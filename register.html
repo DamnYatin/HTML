@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiestaFlow</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="nav">
+            <div class="nav-left">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+            </div>
+            <div class="logo">
+                
+            </div>
+            <div class="nav-right">
+                <a href="about.html">About Us</a>
+                <a href="register.html">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <p class="eyebrow">.</p>
+            <h2 class="contact-title">How we can help you?</h2>
+
+        <div class="contact-grid">
+        <!-- LEFT: Map -->
+        <div class="contact-map">
+            <iframe
+                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Ramdeobaba &amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                width="100%" height="460" style="border:0;" allowfullscreen loading="lazy">
+            </iframe>
+        </div>
+
+        <!-- RIGHT: Form -->
+        <div class="contact-form-wrap">
+            <form class="contact-form" action="#" method="post" novalidate>
+                <input class="input" type="text" name="name" placeholder="Your Name" required>
+                <input class="input" type="email" name="email" placeholder="Your Email Address" required>
+                <input class="input" type="tel" name="phone" placeholder="Contact Number">
+                <textarea class="textarea" name="message" rows="6" placeholder="Your Message"></textarea>
+        <div class="btn-row">
+            <button type="submit" class="btn-primary">Send Message</button>
+        </div>
+        </form>
+    </section>
+</body>
+</html>
