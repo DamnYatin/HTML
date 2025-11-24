@@ -1,0 +1,315 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #090a0a;
+  padding: 15px 0;
+}
+
+
+/* NAVIGATION BAR */
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    margin: 0 10px;
+    display: inline-block;
+    border-radius: 100px;
+    /* Smooth transition for hover effects */
+    transition: all 0.3s ease;
+}
+
+/* HERO VIDEO SECTION */
+.video-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Card Section */
+.event-cards-section {
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+    padding: 60px 20px 0px;
+    min-height: auto;
+}
+
+.event-cards-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.event-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.event-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 500px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.event-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.event-card:hover .event-card-image {
+    transform: scale(1.1);
+}
+
+.event-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    color: white;
+}
+
+.event-card-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f4a460;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.event-card-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.event-highlight {
+    color: #a0a0ff;
+    font-weight: bold;
+}
+
+.event-read-more {
+    display: inline-block;
+    color: #f4a460;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f4a460;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.event-read-more:hover {
+    color: #ffd700;
+    border-bottom-color: #ffd700;
+    padding-left: 10px;
+}
+
+/* OVERVIEW */
+.corporate-event-section {
+    padding-top: 0;
+    background-color: #000000;
+    padding: 40px 20px 80px;
+    color: #ffffff;
+}
+
+.corporate-event-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.corporate-event-content {
+    padding-right: 40px;
+}
+
+.corporate-event-subtitle {
+    font-size: 16px;
+    color: #999999;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.corporate-event-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #d4a574;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.corporate-event-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #cccccc;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.corporate-event-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 2px solid #555555;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.corporate-event-images {
+    position: relative;
+}
+
+.corporate-images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 15px;
+}
+
+.corporate-image-item {
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.corporate-image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.corporate-image-item:hover img {
+    transform: scale(1.1);
+}
+
+.corporate-experience-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.badge-content {
+    width: 180px;
+    height: 180px;
+    background-color: #000000;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.badge-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.badge-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/* Our Work gallery styles */
+.our-work {
+  background: #000;
+  color: #d9a187;
+  padding: 60px 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.our-work .container {
+  max-width: 1250px;  /* Increased width so images can grow */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Title */
+.section-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: #c88d74;
+}
+
+/* Bigger grid layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px;
+}
+
+.gallery-item {
+  background: #111;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  min-height: 260px;  /* Increased height */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 260px;          /* Bigger rectangle height */
+  object-fit: cover;      /* Keeps images cropped uniformly */
+  display: block;
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+/* Hover zoom effect */
+.gallery-item:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.95);
+}
+
